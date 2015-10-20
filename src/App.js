@@ -1,4 +1,5 @@
 var React = require('react');
+var ReactDOM = require('react-dom');
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
@@ -81,7 +82,7 @@ var BlogPage = React.createClass({
   }
 });
 
-React.render(
+ReactDOM.render(
   <Home/>,
   document.getElementById('root')
 )
